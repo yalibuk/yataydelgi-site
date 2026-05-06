@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1a4d7c">
+
+<!-- SEO -->
+<title>Yatay Delgi Bilgi Merkezi — HDD, Mikrotünel ve Kazısız Geçiş Rehberi</title>
+<meta name="description" content="Yatay delgi (HDD), mikrotünel, boru itme ve pipe bursting hakkında her şey. Mühendisler ve proje sahipleri için Türkiye'nin en kapsamlı kazısız geçiş bilgi kaynağı.">
+<meta name="keywords" content="yatay delgi, HDD, horizontal directional drilling, kazısız geçiş, mikrotünel, boru itme, auger boring, pipe bursting, yatay sondaj, hesaplama, rehber">
+<meta name="author" content="Yatay Delgi Bilgi Merkezi">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://www.yataydelgi.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Yatay Delgi Bilgi Merkezi">
+<meta property="og:description" content="Türkiye'nin en kapsamlı kazısız geçiş teknolojileri bilgi kaynağı.">
+<meta property="og:url" content="https://www.yataydelgi.com/">
+
+<!-- Schema.org - Educational website -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Yatay Delgi Bilgi Merkezi",
+  "url": "https://www.yataydelgi.com",
+  "description": "Türkiye'nin en kapsamlı kazısız geçiş teknolojileri bilgi kaynağı.",
+  "inLanguage": "tr-TR",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yatay Delgi Bilgi Merkezi"
+  }
+}
+</script>
+
+<!-- Article schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Yatay Delgi Bilgi Merkezi",
+  "url": "https://www.yataydelgi.com",
+  "sameAs": [
+    "https://www.deltek.com.tr"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a4d7c'/%3E%3Ctext x='50' y='65' font-family='Arial' font-size='50' font-weight='bold' fill='white' text-anchor='middle'%3EYD%3C/text%3E%3C/svg%3E">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  :root {
+    --primary: #1a4d7c;
+    --primary-dark: #0d3559;
+    --accent: #d97706;
+    --accent-light: #fef3c7;
+    --bg: #fafaf9;
+    --bg-card: #ffffff;
+    --text: #1c1917;
+    --text-secondary: #57534e;
+    --text-light: #78716c;
+    --border: #e7e5e4;
+    --border-strong: #d6d3d1;
+  }
+  
+  html { scroll-behavior: smooth; }
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { color: var(--accent); }
+  
+  /* Top notification bar */
+  .top-bar {
+    background: var(--primary-dark);
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .top-bar a {
+    color: var(--accent-light);
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 8px;
+  }
+  
+  /* Header */
+  header {
+    background: white;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  .logo-mark {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+  }
+  
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  
+  .logo-name {
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--text);
+  }
+  
+  .logo-tag {
+    font-size: 11px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  nav.main-nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  
+  nav.main-nav a {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.15s;
+  }
+  
+  nav.main-nav a:hover {
+    color: var(--primary);
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    width: 220px;
+  }
+  
+  .search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    color: var(--text);
+  }
+  
+  .search-box svg {
+    width: 16px;
+    height: 16px;
+    color: var(--text-light);
+    flex-shrink: 0;
+  }
+  
+  .mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 80px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(217, 119, 6, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(32px, 4.5vw, 52px);
+    line-height: 1.15;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  
+  .hero-content p {
+    font-size: 19px;
+    opacity: 0.92;
+    margin-bottom: 32px;
+    line-height: 1.6;
+    max-width: 580px;
+  }
+  
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: white;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background: #b45309;
+    transform: translateY(-1px);
+    color: white;
+  }
+  
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(255,255,255,0.2);
+    color: white;
+  }
+  
+  /* Hero stats card */
+  .hero-stats {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    color: var(--text);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+  
+  .hero-stats h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+  }
+  
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .stat-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .stat-row:first-child { padding-top: 0; }
+  
+  .stat-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  
+  .stat-value {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 16px;
+  }
+  
+  /* Section base */
+  section {
+    padding: 80px 24px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-header {
+    margin-bottom: 48px;
+    max-width: 800px;
+  }
+  
+  .section-eyebrow {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  
+  .section-header h2 {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.2;
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  
+  .section-header p {
+    font-size: 17px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  
+  /* Method cards grid */
+  .methods-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .method-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .method-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(26, 77, 124, 0.12);
+  }
+  
+  .method-card-header {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .method-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  
+  .method-card h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  
+  .method-card .method-en {
+    font-size: 13px;
+    color: var(--text-light);
+    font-style: italic;
+  }
+  
+  .method-card-body {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.65;
+  }
+  
+  .method-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 16px;
+    background: var(--bg);
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .spec {
+    font-size: 13px;
+  }
+  
+  .spec-label {
+    color: var(--text-light);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2px;
+  }
+  
+  .spec-value {
+    color: var(--text);
+    font-weight: 600;
+  }
+  
+  .method-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .method-card-link::after {
+    content: '→';
+    transition: transform 0.2s;
+  }
+  
+  .method-card:hover .method-card-link::after {
+    transform: translateX(4px);
+  }
+  
+  /* Comparison table section */
+  .comparison-section {
+    background: white;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .comparison-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  
+  table.comparison {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+  }
+  
+  table.comparison th,
+  table.comparison td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  table.comparison thead th {
+    background: var(--primary-dark);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  table.comparison tbody tr:hover {
+    background: var(--bg);
+  }
+  
+  table.comparison tbody td:first-child {
+    font-weight: 600;
+    color: var(--text);
+  }
+  
+  table.comparison tbody td {
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+  
+  /* Decision tree section */
+  .decision-section {
+    background: linear-gradient(180deg, var(--bg) 0%, white 100%);
+  }
+  
+  .decision-tree {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .decision-step {
+    display: flex;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .decision-step:last-child { border-bottom: none; padding-bottom: 0; }
+  .decision-step:first-child { padding-top: 0; }
+  
+  .decision-num {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .decision-content h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: var(--text);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  
+  .decision-content p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .decision-options {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .decision-tag {
+    padding: 4px 12px;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  /* Articles section */
+  .articles-section {
+    background: var(--bg);
+  }
+  
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  
+  .article-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  }
+  
+  .article-cover {
+    height: 180px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .article-cover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 30% 30%, rgba(217, 119, 6, 0.3) 0%, transparent 60%);
+  }
+  
+  .article-cover-text {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 24px;
+    z-index: 2;
+  }
+  
+  .article-cover.cover-2 {
+    background: linear-gradient(135deg, #166534 0%, #14532d 100%);
+  }
+  
+  .article-cover.cover-3 {
+    background: linear-gradient(135deg, #7c2d12 0%, #5c1d0e 100%);
+  }
+  
+  .article-cover.cover-4 {
+    background: linear-gradient(135deg, #581c87 0%, #3b0764 100%);
+  }
+  
+  .article-cover.cover-5 {
+    background: linear-gradient(135deg, #be123c 0%, #831843 100%);
+  }
+  
+  .article-cover.cover-6 {
+    background: linear-gradient(135deg, #115e59 0%, #064e3b 100%);
+  }
+  
+  .article-body {
+    padding: 24px;
+  }
+  
+  .article-meta {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: var(--text-light);
+  }
+  
+  .article-cat {
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .article-card h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--text);
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  
+  .article-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Calculator section */
+  .calculator-section {
+    background: white;
+  }
+  
+  .calculator {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px;
+  }
+  
+  .calc-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .calc-field label {
+    display: block;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  .calc-field input,
+  .calc-field select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background: white;
+  }
+  
+  .calc-field input:focus,
+  .calc-field select:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  
+  .calc-results {
+    background: white;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 24px;
+  }
+  
+  .calc-results h4 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-dark);
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  
+  .result-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .result-row:last-child {
+    border-bottom: none;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 2px solid var(--primary);
+  }
+  
+  .result-label {
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+  
+  .result-value {
+    color: var(--text);
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .calc-disclaimer {
+    margin-top: 20px;
+    padding: 16px;
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    font-size: 13px;
+    color: #92400e;
+    line-height: 1.6;
+    border-radius: 4px;
+  }
+  
+  .calc-disclaimer strong { color: #78350f; }
+  
+  /* Glossary section */
+  .glossary-section {
+    background: var(--bg);
+  }
+  
+  .glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .glossary-item {
+    background: white;
+    padding: 20px 24px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary);
+  }
+  
+  .glossary-term {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: var(--primary-dark);
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .glossary-def {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Partner section - subtle Deltek mention */
+  .partner-section {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    color: white;
+    padding: 60px 24px;
+  }
+  
+  .partner-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .partner-eyebrow {
+    color: var(--accent-light);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+  }
+  
+  .partner-section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-weight: 900;
+  }
+  
+  .partner-section p {
+    font-size: 17px;
+    opacity: 0.92;
+    margin-bottom: 32px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .partner-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    color: var(--primary-dark);
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s;
+  }
+  
+  .partner-cta:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .partner-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  .partner-stat {
+    text-align: center;
+  }
+  
+  .partner-stat-num {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--accent-light);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  
+  .partner-stat-label {
+    font-size: 13px;
+    opacity: 0.9;
+  }
+  
+  /* FAQ section */
+  .faq-section {
+    background: white;
+  }
+  
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .faq-question {
+    padding: 20px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--text);
+    font-size: 17px;
+    transition: color 0.2s;
+  }
+  
+  .faq-question:hover { color: var(--primary); }
+  
+  .faq-toggle {
+    width: 24px;
+    height: 24px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+  }
+  
+  .faq-item.open .faq-toggle {
+    transform: rotate(45deg);
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .faq-item.open .faq-answer {
+    max-height: 500px;
+  }
+  
+  .faq-answer-inner {
+    padding: 0 0 20px 0;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  
+  .faq-answer-inner a {
+    color: var(--primary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--primary);
+  }
+  
+  /* Newsletter / lead capture */
+  .newsletter-section {
+    background: var(--accent-light);
+    border-top: 1px solid var(--border);
+  }
+  
+  .newsletter {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 28px;
+    color: var(--text);
+    margin-bottom: 12px;
+    font-weight: 900;
+  }
+  
+  .newsletter p {
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+    font-size: 16px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 8px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-form input {
+    flex: 1;
+    padding: 14px 18px;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+  }
+  
+  .newsletter-form input:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  
+  .newsletter-form button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .newsletter-form button:hover {
+    background: var(--primary-dark);
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--text);
+    color: rgba(255,255,255,0.7);
+    padding: 60px 24px 24px;
+  }
+  
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  
+  .footer-brand p {
+    margin: 16px 0;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  
+  .footer-brand .footer-logo {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  
+  .footer-col h4 {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+  }
+  
+  .footer-col li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col a {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+  
+  .footer-col a:hover { color: var(--accent-light); }
+  
+  .footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+  }
+  
+  .partner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.05);
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+  }
+  
+  .partner-badge a {
+    color: var(--accent-light);
+    font-weight: 600;
+  }
+  
+  /* Reveal animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Mobile */
+  @media (max-width: 900px) {
+    .header-inner { padding: 12px 16px; }
+    nav.main-nav { display: none; }
+    .search-box { display: none; }
+    .mobile-toggle { display: block; }
+    .hero { padding: 48px 16px; }
+    .hero-inner { grid-template-columns: 1fr; gap: 32px; }
+    section { padding: 48px 16px; }
+    .methods-grid { grid-template-columns: 1fr; }
+    .articles-grid { grid-template-columns: 1fr; }
+    .glossary-grid { grid-template-columns: 1fr; }
+    .calc-row { grid-template-columns: 1fr; }
+    .partner-stats { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .newsletter-form { flex-direction: column; }
+    .calculator { padding: 24px; }
+    .decision-tree { padding: 24px; }
+    .decision-step { flex-direction: column; gap: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  📚 Türkiye'nin en kapsamlı kazısız geçiş bilgi kaynağı 
+  <a href="#newsletter">Bültenimize katıl →</a>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">YD</div>
+      <div class="logo-text">
+        <div class="logo-name">Yatay Delgi</div>
+        <div class="logo-tag">Bilgi Merkezi</div>
+      </div>
+    </a>
+    
+    <nav class="main-nav">
+      <a href="#yontemler">Yöntemler</a>
+      <a href="#karsilastirma">Karşılaştırma</a>
+      <a href="#hesaplama">Hesaplama</a>
+      <a href="#makaleler">Makaleler</a>
+      <a href="#sozluk">Sözlük</a>
+      <a href="#sss">SSS</a>
+    </nav>
+    
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="search" placeholder="Bilgi ara...">
+    </div>
+    
+    <button class="mobile-toggle" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1>Yatay delgi hakkında<br>bilmeniz gereken her şey.</h1>
+      <p>HDD'den mikrotünele, boru itmeden pipe bursting'e kadar — kazısız geçiş teknolojilerini mühendislik perspektifiyle anlatan, Türkiye'nin en kapsamlı bağımsız bilgi kaynağı.</p>
+      <div class="hero-actions">
+        <a href="#yontemler" class="btn-primary">
+          Yöntemleri keşfet
+          <span>→</span>
+        </a>
+        <a href="#hesaplama" class="btn-secondary">
+          Hesaplama araçları
+        </a>
+      </div>
+    </div>
+    
+    <div class="hero-stats">
+      <h3>Sektörden rakamlar</h3>
+      <div class="stat-row">
+        <span class="stat-label">Türkiye'de yıllık HDD pazarı</span>
+        <span class="stat-value">~850M TL</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Klasik kazıya göre tasarruf</span>
+        <span class="stat-value">%30-60</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Dünya rekoru HDD uzunluğu</span>
+        <span class="stat-value">4.058 m</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Sektörel büyüme (yıllık)</span>
+        <span class="stat-value">%8.1</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODS -->
+<section id="yontemler" class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Kazısız Geçiş Yöntemleri</div>
+      <h2>Her ihtiyaca uygun bir yöntem var</h2>
+      <p>Her kazısız teknoloji belirli koşullara, çaplara ve mesafelere göre optimize edilmiştir. İhtiyacınıza en uygun yöntemi seçmek başarının ilk adımıdır.</p>
+    </div>
+    
+    <div class="methods-grid">
+      <article class="method-card">
+        <div class="method-card-header">
+          <div class="method-icon">01</div>
+          <div>
+            <h3>Yönlendirilebilir Yatay Delgi</h3>
+            <div class="method-en">Horizontal Directional Drilling (HDD)</div>
+          </div>
+        </div>
+        <div class="method-card-body">
+          GPS ve elektromanyetik sensörlerle yer altında 3 boyutlu yön kontrolü sağlayan, en yaygın kazısız teknolojidir. Pilot delgi, genişletme ve boru çekme olmak üzere üç aşamada uygulanır.
+        </div>
+        <div class="method-specs">
+          <div class="spec">
+            <div class="spec-label">Çap aralığı</div>
+            <div class="spec-value">50 – 1500 mm</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">Maks. uzunluk</div>
+            <div class="spec-value">2000 m+</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">Hassasiyet</div>
+            <div class="spec-value">±50 mm</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">İdeal kullanım</div>
+            <div class="spec-value">Uzun mesafe</div>
+          </div>
+        </div>
+        <a href="#" class="method-card-link">Detaylı incele</a>
+      </article>
+      
+      <article class="method-card">
+        <div class="method-card-header">
+          <div class="method-icon">02</div>
+          <div>
+            <h3>Boru İtme / Sürme / Çakma</h3>
+            <div class="method-en">Pipe Jacking & Auger Boring</div>
+          </div>
+        </div>
+        <div class="method-card-body">
+          Hidrolik silindirlerle çelik boruların yer altına itildiği yöntem. İçerideki helezon, mini iş makinesi veya el gücü ile kazılan toprak dışarı taşınır. Kısa-orta mesafe büyük çap geçişler için idealdir.
+        </div>
+        <div class="method-specs">
+          <div class="spec">
+            <div class="spec-label">Çap aralığı</div>
+            <div class="spec-value">800 – 2000 mm</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">Tipik uzunluk</div>
+            <div class="spec-value">50 – 200 m</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">Yöntem</div>
+            <div class="spec-value">İtme + kazı</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">İdeal kullanım</div>
+            <div class="spec-value">Büyük çap</div>
+          </div>
+        </div>
+        <a href="#" class="method-card-link">Detaylı incele</a>
+      </article>
+      
+      <article class="method-card">
+        <div class="method-card-header">
+          <div class="method-icon">03</div>
+          <div>
+            <h3>Mikrotünel</h3>
+            <div class="method-en">Microtunneling</div>
+          </div>
+        </div>
+        <div class="method-card-body">
+          Uzaktan kontrollü kesici başlığın zemini ilerletirken arkasına prekast boru segmentlerinin yerleştirildiği tam mekanize sistemdir. Yeraltı su seviyesi yüksek bölgelerde ve hassas projelerde tercih edilir.
+        </div>
+        <div class="method-specs">
+          <div class="spec">
+            <div class="spec-label">Çap aralığı</div>
+            <div class="spec-value">600 – 3000 mm</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">Hassasiyet</div>
+            <div class="spec-value">±25 mm</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">Otomasyon</div>
+            <div class="spec-value">Tam mekanize</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">İdeal kullanım</div>
+            <div class="spec-value">Şehir merkezi</div>
+          </div>
+        </div>
+        <a href="#" class="method-card-link">Detaylı incele</a>
+      </article>
+      
+      <article class="method-card">
+        <div class="method-card-header">
+          <div class="method-icon">04</div>
+          <div>
+            <h3>Boru Yenileme</h3>
+            <div class="method-en">Pipe Bursting</div>
+          </div>
+        </div>
+        <div class="method-card-body">
+          Eski borunun içinden geçirilen pnömatik veya hidrolik patlatıcı başlık eski boruyu zemine doğru parçalar; aynı anda arkasından çekilen yeni boru oluşan boşluğa yerleştirilir. İsteğe göre çap büyütülebilir.
+        </div>
+        <div class="method-specs">
+          <div class="spec">
+            <div class="spec-label">Eski boru</div>
+            <div class="spec-value">Tüm tipler</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">Çap büyütme</div>
+            <div class="spec-value">%50'ye kadar</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">Süre</div>
+            <div class="spec-value">Klasiğin 1/3'ü</div>
+          </div>
+          <div class="spec">
+            <div class="spec-label">İdeal kullanım</div>
+            <div class="spec-value">Yenileme</div>
+          </div>
+        </div>
+        <a href="#" class="method-card-link">Detaylı incele</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section id="karsilastirma" class="comparison-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Karşılaştırma</div>
+      <h2>Hangi yöntem ne zaman?</h2>
+      <p>Dört ana kazısız geçiş yöntemini yan yana karşılaştırın. Doğru seçim, projenin başarısının %50'sini belirler.</p>
+    </div>
+    
+    <div class="comparison-table-wrap">
+      <table class="comparison">
+        <thead>
+          <tr>
+            <th>Kriter</th>
+            <th>HDD</th>
+            <th>Boru İtme</th>
+            <th>Mikrotünel</th>
+            <th>Pipe Bursting</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tipik mesafe</td>
+            <td>200 – 2000 m</td>
+            <td>50 – 200 m</td>
+            <td>100 – 1500 m</td>
+            <td>50 – 500 m</td>
+          </tr>
+          <tr>
+            <td>Çap aralığı</td>
+            <td>50 – 1500 mm</td>
+            <td>800 – 2000 mm</td>
+            <td>600 – 3000 mm</td>
+            <td>Eski + %50</td>
+          </tr>
+          <tr>
+            <td>Hassasiyet</td>
+            <td>±50 mm</td>
+            <td>±100 mm</td>
+            <td>±25 mm</td>
+            <td>Hat takip eder</td>
+          </tr>
+          <tr>
+            <td>Sert kayada uygunluk</td>
+            <td>Orta (özel kafa ile)</td>
+            <td>Yüksek</td>
+            <td>Çok yüksek</td>
+            <td>Düşük</td>
+          </tr>
+          <tr>
+            <td>Yüksek su seviyesi</td>
+            <td>Zorlu</td>
+            <td>Zorlu</td>
+            <td>İdeal</td>
+            <td>Zorlu</td>
+          </tr>
+          <tr>
+            <td>Maliyet (göreceli)</td>
+            <td>Düşük-Orta</td>
+            <td>Orta</td>
+            <td>Yüksek</td>
+            <td>Düşük</td>
+          </tr>
+          <tr>
+            <td>İdeal kullanım</td>
+            <td>Uzun mesafe, esnek güzergâh</td>
+            <td>Düz, kısa, büyük çap</td>
+            <td>Hassas, şehir merkezi</td>
+            <td>Mevcut hat yenileme</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- DECISION TREE -->
+<section class="decision-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Karar Rehberi</div>
+      <h2>4 adımda doğru yöntemi seçin</h2>
+      <p>Doğru kazısız teknolojiyi seçmek karmaşık görünebilir, ama doğru sırayla cevaplandığında basit. Bu rehber size kılavuzluk eder.</p>
+    </div>
+    
+    <div class="decision-tree">
+      <div class="decision-step">
+        <div class="decision-num">1</div>
+        <div class="decision-content">
+          <h4>Mevcut bir hat mı yeniliyorsunuz, sıfırdan mı kuruyorsunuz?</h4>
+          <p>Mevcut hat yenilemesi için pipe bursting genelde en hızlı ve ekonomik seçenektir. Sıfırdan kurulum yapıyorsanız diğer üç yöntemden birini değerlendirmelisiniz.</p>
+          <div class="decision-options">
+            <span class="decision-tag">Yenileme → Pipe Bursting</span>
+            <span class="decision-tag">Sıfırdan → Adım 2'ye geçin</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="decision-step">
+        <div class="decision-num">2</div>
+        <div class="decision-content">
+          <h4>Boru çapınız ne kadar?</h4>
+          <p>Çap, yöntem seçiminde belirleyici faktördür. Küçük çaplarda HDD, orta-büyük çaplarda boru itme, çok büyük ve hassas projelerde mikrotünel öne çıkar.</p>
+          <div class="decision-options">
+            <span class="decision-tag">≤ 600 mm → HDD</span>
+            <span class="decision-tag">600-2000 mm → Boru İtme</span>
+            <span class="decision-tag">≥ 1500 mm → Mikrotünel</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="decision-step">
+        <div class="decision-num">3</div>
+        <div class="decision-content">
+          <h4>Geçiş mesafeniz ne kadar?</h4>
+          <p>Uzun mesafeli geçişlerde HDD'nin esnekliği ve mikrotünelin hassasiyeti tercih edilir. Kısa mesafede boru itme ekonomiktir.</p>
+          <div class="decision-options">
+            <span class="decision-tag">< 100 m → Boru İtme</span>
+            <span class="decision-tag">100-500 m → HDD veya Mikrotünel</span>
+            <span class="decision-tag">> 500 m → HDD</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="decision-step">
+        <div class="decision-num">4</div>
+        <div class="decision-content">
+          <h4>Zemin koşulları nasıl?</h4>
+          <p>Zemin yapısı yönteminizin başarısını doğrudan etkiler. Yumuşak zemin ve kaya formasyonları farklı yaklaşımlar gerektirir. Detaylı zemin etüdü her zaman şarttır.</p>
+          <div class="decision-options">
+            <span class="decision-tag">Kil/kum → Tüm yöntemler uygun</span>
+            <span class="decision-tag">Sert kaya → Mikrotünel veya boru itme</span>
+            <span class="decision-tag">Yüksek su seviyesi → Mikrotünel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section id="makaleler" class="articles-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Makaleler</div>
+      <h2>Sektörden teknik içerik</h2>
+      <p>Mühendisler, proje yöneticileri ve yatırımcılar için güncel rehberler, vaka analizleri ve teknolojik gelişmeler.</p>
+    </div>
+    
+    <div class="articles-grid">
+      <article class="article-card">
+        <div class="article-cover">
+          <div class="article-cover-text">HDD</div>
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-cat">Teknik Rehber</span>
+            <span>•</span>
+            <span>8 dk okuma</span>
+          </div>
+          <h3>HDD makinelerinde dizel ve elektrik karşılaştırması</h3>
+          <p>Modern yatay delgi makinelerinde elektrik motorlarının yükselişi neyi değiştiriyor? Maliyet, çevre ve verim açısından detaylı analiz.</p>
+        </div>
+      </article>
+      
+      <article class="article-card">
+        <div class="article-cover cover-2">
+          <div class="article-cover-text">Vaka</div>
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-cat">Vaka Analizi</span>
+            <span>•</span>
+            <span>12 dk okuma</span>
+          </div>
+          <h3>Miami kanalizasyon projesi: 4058 metrelik dünya rekoru</h3>
+          <p>ABD Miami'de yapılan rekor HDD geçişinin teknik detayları, kullanılan ekipman ve karşılaşılan zorluklar.</p>
+        </div>
+      </article>
+      
+      <article class="article-card">
+        <div class="article-cover cover-3">
+          <div class="article-cover-text">Mikro</div>
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-cat">Teknik Analiz</span>
+            <span>•</span>
+            <span>10 dk okuma</span>
+          </div>
+          <h3>Mikrotünel mi HDD mi? Karar verme rehberi</h3>
+          <p>Şehir merkezindeki büyük çaplı bir projede hangi yöntemi seçmelisiniz? Karar matrisi ve gerçek proje örnekleri ile.</p>
+        </div>
+      </article>
+      
+      <article class="article-card">
+        <div class="article-cover cover-4">
+          <div class="article-cover-text">Zemin</div>
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-cat">Mühendislik</span>
+            <span>•</span>
+            <span>15 dk okuma</span>
+          </div>
+          <h3>Zemin etüdü: HDD projesinin %80'i burada</h3>
+          <p>Doğru zemin analizi yapılmadan başlanan HDD projelerinin %60'ı sorunla karşılaşıyor. Etüt sürecinde nelere dikkat etmeli?</p>
+        </div>
+      </article>
+      
+      <article class="article-card">
+        <div class="article-cover cover-5">
+          <div class="article-cover-text">Çevre</div>
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-cat">Sürdürülebilirlik</span>
+            <span>•</span>
+            <span>7 dk okuma</span>
+          </div>
+          <h3>Bentonit çamuru ve çevresel etki yönetimi</h3>
+          <p>Yatay delgi projelerinde kullanılan sondaj akışkanlarının çevresel etkileri ve modern yaklaşımlar.</p>
+        </div>
+      </article>
+      
+      <article class="article-card">
+        <div class="article-cover cover-6">
+          <div class="article-cover-text">Maliyet</div>
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-cat">Yönetim</span>
+            <span>•</span>
+            <span>9 dk okuma</span>
+          </div>
+          <h3>HDD projelerinde maliyet kalemleri ve bütçeleme</h3>
+          <p>Bir HDD projesinin gerçek maliyeti nedir? Doğru bütçeleme için bilmeniz gereken tüm kalemler.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="hesaplama" class="calculator-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Hesaplama Aracı</div>
+      <h2>HDD proje ön bütçe hesaplayıcı</h2>
+      <p>Projenizin temel parametrelerini girin, yaklaşık süre ve maliyet aralığını anında öğrenin. Bu bir ön tahmin aracıdır; gerçek teklif için profesyonel bir mühendislik değerlendirmesi gereklidir.</p>
+    </div>
+    
+    <div class="calculator">
+      <div class="calc-row">
+        <div class="calc-field">
+          <label for="length">Geçiş uzunluğu (metre)</label>
+          <input type="number" id="length" value="500" min="50" max="3000">
+        </div>
+        <div class="calc-field">
+          <label for="diameter">Boru çapı (mm)</label>
+          <input type="number" id="diameter" value="400" min="50" max="1500">
+        </div>
+      </div>
+      
+      <div class="calc-row">
+        <div class="calc-field">
+          <label for="soil">Zemin tipi</label>
+          <select id="soil">
+            <option value="1">Yumuşak (kil, kum)</option>
+            <option value="1.3">Orta sert (sıkı kum, çakıl)</option>
+            <option value="1.7">Sert (kireçtaşı, marn)</option>
+            <option value="2.2">Çok sert (granit, sert kaya)</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label for="depth">Maks. derinlik (metre)</label>
+          <input type="number" id="depth" value="15" min="3" max="60">
+        </div>
+      </div>
+      
+      <button onclick="calculate()" class="btn-primary" style="width: 100%; padding: 16px; justify-content: center; font-size: 16px;">
+        Hesapla
+        <span>→</span>
+      </button>
+      
+      <div id="results" class="calc-results" style="display: none;">
+        <h4>Tahmini sonuç</h4>
+        <div class="result-row">
+          <span class="result-label">Tahmini proje süresi</span>
+          <span class="result-value" id="duration">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">Çamur ihtiyacı (yaklaşık)</span>
+          <span class="result-value" id="mud">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">Önerilen makine sınıfı</span>
+          <span class="result-value" id="machine">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">Tahmini bütçe aralığı</span>
+          <span class="result-value" id="budget">—</span>
+        </div>
+      </div>
+      
+      <div class="calc-disclaimer">
+        <strong>⚠️ Önemli not:</strong> Bu hesaplama sektör ortalamalarına göre yapılan kaba bir tahmindir. Gerçek bir teklif için zemin etüdü, güzergâh analizi ve uzman değerlendirmesi gereklidir. Proje bazlı doğru fiyat için bir uzmanla çalışmanızı öneririz.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER / DELTEK MENTION -->
+<section class="partner-section reveal">
+  <div class="partner-inner">
+    <div class="partner-eyebrow">İçerik Ortağımız</div>
+    <h2>Bu site Türkiye'nin önde gelen yatay delgi firmasının desteğiyle yayınlanmaktadır</h2>
+    <p>20+ yıllık saha deneyimine sahip <a href="https://www.deltek.com.tr" style="color: white; text-decoration: underline;" target="_blank" rel="noopener"><strong>Deltek Kazısız Yatay Delgi Teknolojileri</strong></a>, bu sitedeki teknik içeriğin doğruluğu ve güncelliği için bilgi ve tecrübesini bizimle paylaşmaktadır. Profesyonel destek ve uygulama için doğrudan iletişime geçebilirsiniz.</p>
+    <a href="https://www.deltek.com.tr" class="partner-cta" target="_blank" rel="noopener">
+      Profesyonel destek al
+      <span>→</span>
+    </a>
+    
+    <div class="partner-stats">
+      <div class="partner-stat">
+        <div class="partner-stat-num">20+</div>
+        <div class="partner-stat-label">Yıllık tecrübe</div>
+      </div>
+      <div class="partner-stat">
+        <div class="partner-stat-num">196k+</div>
+        <div class="partner-stat-label">Metre delgi</div>
+      </div>
+      <div class="partner-stat">
+        <div class="partner-stat-num">324</div>
+        <div class="partner-stat-label">İş ortağı</div>
+      </div>
+      <div class="partner-stat">
+        <div class="partner-stat-num">2</div>
+        <div class="partner-stat-label">Ofis (İST · İZM)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOSSARY -->
+<section id="sozluk" class="glossary-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Sektör Sözlüğü</div>
+      <h2>Yatay delgi terimleri</h2>
+      <p>Sektörde sıkça kullanılan teknik terimlerin açıklamaları. Her mühendisin ve proje sahibinin bilmesi gereken kavramlar.</p>
+    </div>
+    
+    <div class="glossary-grid">
+      <div class="glossary-item">
+        <div class="glossary-term">Pilot Delgi</div>
+        <div class="glossary-def">HDD uygulamasının ilk aşaması. Küçük çaplı bir delgi başlığı ile hedef güzergâhın açıldığı, yön kontrollü ilk delik.</div>
+      </div>
+      
+      <div class="glossary-item">
+        <div class="glossary-term">Reaming (Genişletme)</div>
+        <div class="glossary-def">Pilot deliğin, döşenecek boru çapına uygun şekilde büyütülmesi işlemi. Genellikle boru çapının 1.2-1.5 katı kadar genişletilir.</div>
+      </div>
+      
+      <div class="glossary-item">
+        <div class="glossary-term">Bentonit Çamuru</div>
+        <div class="glossary-def">Su ve doğal kil (bentonit) karışımı sondaj akışkanı. Delgi sırasında soğutma, temizlik ve duvar stabilitesi sağlar.</div>
+      </div>
+      
+      <div class="glossary-item">
+        <div class="glossary-term">Reamer</div>
+        <div class="glossary-def">Pilot deliği genişletmek için kullanılan, dönen kesici uç. Zemin tipine göre farklı tasarımları vardır.</div>
+      </div>
+      
+      <div class="glossary-item">
+        <div class="glossary-term">Tij (Drill Pipe)</div>
+        <div class="glossary-def">Sondaj sırasında birbirine eklenerek uzatılan çelik borular. Hem itme hem dönme hareketini iletir.</div>
+      </div>
+      
+      <div class="glossary-item">
+        <div class="glossary-term">Walkover Locator</div>
+        <div class="glossary-def">Delgi başlığının konumunu yüzeyden takip etmek için kullanılan elektromanyetik tarama cihazı.</div>
+      </div>
+      
+      <div class="glossary-item">
+        <div class="glossary-term">MTBM (Microtunnel Boring Machine)</div>
+        <div class="glossary-def">Mikrotünel uygulamalarında kullanılan, uzaktan kumandalı tam mekanize tünel kazma makinesi.</div>
+      </div>
+      
+      <div class="glossary-item">
+        <div class="glossary-term">Şaft (Pit)</div>
+        <div class="glossary-def">Boru itme ve mikrotünelde, makinenin yer altına indirildiği başlangıç ve çıkış çukurları.</div>
+      </div>
+      
+      <div class="glossary-item">
+        <div class="glossary-term">Pull-back Force</div>
+        <div class="glossary-def">HDD'nin son aşamasında borunun deliğe çekilmesi için makinenin uyguladığı kuvvet. Kritik bir tasarım parametresidir.</div>
+      </div>
+      
+      <div class="glossary-item">
+        <div class="glossary-term">Frac-out</div>
+        <div class="glossary-def">Sondaj çamurunun yüzeye istenmeyen bir noktadan çıkması. Çevresel risk oluşturur, dikkatli izlenmelidir.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="sss" class="faq-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Sıkça Sorulan Sorular</div>
+      <h2>Merak edilenler</h2>
+      <p>Yatay delgi ile ilgili en çok sorulan soruları derledik. Sorunuzun cevabı yoksa bültenimize katılarak güncel makalelerden haberdar olabilirsiniz.</p>
+    </div>
+    
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">
+          Yatay delgi ile yatay sondaj aynı şey mi?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Pratikte ikisi sektörde aynı anlamda kullanılıyor. Daha teknik olarak "yatay sondaj" jeolojik araştırma sondajlarını da kapsayan genel bir terim, "yatay delgi" ise altyapı kurulumu için yapılan kazısız geçişi tanımlıyor. Sektörde her iki terim de Horizontal Directional Drilling (HDD) için kullanılıyor.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Klasik açık kazıya göre maliyet farkı nedir?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Doğrudan delgi maliyeti açık kazıya göre %20-40 daha pahalı görünür. Ancak yol onarımı, trafik düzenleme, peyzaj restorasyonu ve iş süresi maliyetlerini eklediğinizde toplamda %30-60 tasarruf sağlar. Şehir merkezlerinde bu fark daha da artar.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Bir HDD projesi ne kadar sürer?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            500 metrelik tipik bir HDD projesi (orta zorlukta zemin, 400 mm çap) genellikle 10-15 gün arası sürer. Saha hazırlığı, pilot delgi, genişletme ve boru çekme aşamalarını içerir. Zemin koşulları, hava ve güzergâh karmaşıklığı bu süreyi 2 katına çıkarabilir.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Hangi durumlarda yatay delgi yapılamaz?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Çok büyük çakıllı veya bloklu zeminlerde, çok yüksek yeraltı suyu basıncı olan bölgelerde ve mevcut altyapının çok yoğun olduğu noktalarda yatay delgi tercih edilmez. Ayrıca güzergâhta yer alan büyük boyutlu yapılar, anıtlar veya çok hassas binalar varsa farklı bir kazısız teknoloji (mikrotünel gibi) seçilmelidir.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Bentonit çamuru çevreye zararlı mı?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Bentonit doğal bir kil mineralidir ve genel olarak çevresel açıdan güvenlidir. Su kaynaklarına büyük miktarda karışması istenmez ama su tarafından doğal olarak seyreltilir ve kısa sürede zararsız hale gelir. Modern HDD operasyonlarında çamur geri dönüşüm sistemleri kullanılarak çevresel etki minimize edilir.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Profesyonel destek nereden alabilirim?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Türkiye'de yatay delgi konusunda 20+ yıllık deneyime sahip uzman bir firma olarak <a href="https://www.deltek.com.tr" target="_blank" rel="noopener">Deltek Kazısız Yatay Delgi Teknolojileri</a>'ni öneriyoruz. Proje öncesi etüt, fizibilite, uygulama ve danışmanlık hizmetleri için doğrudan iletişime geçebilirsiniz. Bu sitenin teknik içeriğinin doğruluğu da Deltek mühendislerinin desteğiyle sağlanmaktadır.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="newsletter-section reveal">
+  <div class="newsletter">
+    <h2>Sektörden haberdar kalın</h2>
+    <p>Ayda bir sektörel gelişmeleri, vaka analizlerini ve teknik içerikleri e-posta kutunuza gönderiyoruz. Spam yok, sadece değerli içerik.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Bültene kayıt demosu — gerçek formda e-postanız sisteme eklenir.');">
+      <input type="email" placeholder="E-posta adresiniz" required>
+      <button type="submit">Kayıt ol</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Yatay Delgi</div>
+        <small style="color: rgba(255,255,255,0.5);">BİLGİ MERKEZİ</small>
+        <p>Türkiye'nin en kapsamlı bağımsız kazısız geçiş teknolojileri bilgi kaynağı. Mühendisler, proje yöneticileri ve sektör profesyonelleri için.</p>
+        <div class="partner-badge">
+          🤝 İçerik desteği: <a href="https://www.deltek.com.tr" target="_blank" rel="noopener">deltek.com.tr</a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Yöntemler</h4>
+        <ul>
+          <li><a href="#">HDD</a></li>
+          <li><a href="#">Boru İtme</a></li>
+          <li><a href="#">Mikrotünel</a></li>
+          <li><a href="#">Pipe Bursting</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Kaynaklar</h4>
+        <ul>
+          <li><a href="#makaleler">Makaleler</a></li>
+          <li><a href="#sozluk">Sözlük</a></li>
+          <li><a href="#hesaplama">Hesaplama</a></li>
+          <li><a href="#sss">SSS</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <ul>
+          <li><a href="#newsletter">Bültene katıl</a></li>
+          <li><a href="https://www.deltek.com.tr" target="_blank" rel="noopener">Profesyonel destek</a></li>
+          <li><a href="#">İçerik öner</a></li>
+          <li><a href="#">Hakkımızda</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <span>© 2026 Yatay Delgi Bilgi Merkezi · Tüm hakları saklıdır</span>
+      <span>Bağımsız bir bilgi platformudur · İçerik desteği için <a href="https://www.deltek.com.tr" target="_blank" rel="noopener" style="color: var(--accent-light);">Deltek</a>'e teşekkür ederiz.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  
+  // FAQ toggle
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      q.parentElement.classList.toggle('open');
+    });
+  });
+  
+  // Calculator
+  function calculate() {
+    const length = parseFloat(document.getElementById('length').value) || 0;
+    const diameter = parseFloat(document.getElementById('diameter').value) || 0;
+    const soilFactor = parseFloat(document.getElementById('soil').value) || 1;
+    const depth = parseFloat(document.getElementById('depth').value) || 0;
+    
+    if (length < 50 || diameter < 50) {
+      alert('Lütfen geçerli değerler girin.');
+      return;
+    }
+    
+    // Rough estimation formulas (industry approximation)
+    const baseDailyRate = 80; // meters/day average
+    const days = Math.ceil((length / baseDailyRate) * soilFactor);
+    
+    // Mud estimation (m3) - roughly proportional to bore volume
+    const reamDiameter = diameter * 1.5; // mm
+    const mudVolume = Math.round((Math.PI * Math.pow(reamDiameter/2000, 2) * length) * 3.5);
+    
+    // Machine class
+    let machine;
+    if (diameter < 200 && length < 300) machine = "Küçük (10-20 ton)";
+    else if (diameter < 600 && length < 1000) machine = "Orta (30-50 ton)";
+    else if (diameter < 1000) machine = "Büyük (60-100 ton)";
+    else machine = "Mega (100+ ton)";
+    
+    // Budget estimation (TL) - very rough
+    const baseCostPerMeter = 1500 * soilFactor;
+    const diameterFactor = 1 + (diameter / 1000);
+    const lowBudget = Math.round((length * baseCostPerMeter * diameterFactor) / 1000) * 1000;
+    const highBudget = Math.round(lowBudget * 1.5);
+    
+    document.getElementById('duration').textContent = `${days} gün`;
+    document.getElementById('mud').textContent = `${mudVolume} m³`;
+    document.getElementById('machine').textContent = machine;
+    document.getElementById('budget').textContent = `${(lowBudget/1000).toLocaleString('tr-TR')}k - ${(highBudget/1000).toLocaleString('tr-TR')}k TL`;
+    
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+</script>
+
+</body>
+</html>
