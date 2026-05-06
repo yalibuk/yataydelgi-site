@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Ana Sayfa -->
+  <url>
+    <loc>https://www.yataydelgi.com/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Makale 1: Pillar -->
+  <url>
+    <loc>https://www.yataydelgi.com/makale-1-yatay-delgi-nedir.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Makale 2: Miami Rekoru -->
+  <url>
+    <loc>https://www.yataydelgi.com/makale-2-miami-rekoru.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Makale 3: HDD vs Mikrotünel -->
+  <url>
+    <loc>https://www.yataydelgi.com/makale-3-hdd-mikrotunel.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Makale 4: Zemin Etüdü -->
+  <url>
+    <loc>https://www.yataydelgi.com/makale-4-zemin-etudu.html</loc>
+    <lastmod>2026-12-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
